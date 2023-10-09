@@ -1,0 +1,13 @@
+---
+- name: Deploy npm's packages
+  # hosts: '{{ myhosts }}'
+  hosts: ubu-1
+  become: true
+
+  tasks:
+
+    - name: Install npm's packages
+      community.general.npm:
+        name: @fluencelabs/cli@latest
+        state: present
+

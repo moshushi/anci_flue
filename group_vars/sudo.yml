@@ -1,0 +1,4 @@
+become_method: sudo
+become_user: user
+# ansible_sudo_password: P@ssw0rd
+

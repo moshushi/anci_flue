@@ -1,0 +1,5 @@
+[sudo]
+ubu-1 ansible_host=10.1.91.188
+
+[all:children]
+sudo

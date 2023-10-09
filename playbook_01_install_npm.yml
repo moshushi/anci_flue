@@ -1,0 +1,13 @@
+---
+- name: Deploy npm
+  # hosts: '{{ myhosts }}'
+  hosts: ubu-1
+  become: true
+
+  tasks:
+
+    - name: Install npm package
+      ansible.builtin.apt:
+        name: [npm]
+        state: present
+
